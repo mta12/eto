@@ -1,0 +1,2767 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2019/11/6/eto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2019/11/6/eto">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#data_lost_risk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#pub_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community_Fos_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#use_open_standards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customer_engagement_degree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#standard_reference_model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vulnerability_level"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#clos_erp_indiv"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prop_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Application_Service_Provider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#legal_requirements_included"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#certifications_included"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Vendor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comer_fos_erp_indiv"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#downtime_risk"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#minesup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#suitability_degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#client_org_indiv"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comu_fos_erp_indiv"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#asp_org_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#culture_gap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_org"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#commu_org_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#manages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#market-entry_barriers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_framework"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Sap_Org"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vendor_org_indiv_001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Application_Service_Provider"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+                <ObjectComplementOf>
+                    <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community"/>
+                </ObjectComplementOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Vendor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community_Fos_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community_Fos_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Application_Service_Provider"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Vendor"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community_Fos_ERP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Application_Service_Provider"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Sap_Org"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Vendor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Sap_Org"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Application_Service_Provider"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#asp_org_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#client_org_indiv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#clos_erp_indiv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comer_fos_erp_indiv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#commu_org_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community_Fos_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comu_fos_erp_indiv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Client"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#minesup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Community"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_org"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prop_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Provider"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#pub_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Application_Service_Provider"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vendor_org_indiv_001"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#clos_erp_indiv"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comer_fos_erp_indiv"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comu_fos_erp_indiv"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#pub_erp_indiv_001"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#clos_erp_indiv"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vendor_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comer_fos_erp_indiv"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vendor_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comu_fos_erp_indiv"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#commu_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vendor_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#client_org_indiv"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_org"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#client_org_indiv"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#asp_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#asp_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prop_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#pub_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prov_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#asp_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#asp_org_indiv_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#minesup"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Sap_Org"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Sap_Org"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#clos_erp_indiv"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#clos_erp_indiv"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">closed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cloud_ERP_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#market-entry_barriers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comer_fos_erp_indiv"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#market-entry_barriers"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#comu_fos_erp_indiv"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_framework"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#cost_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#use_open_standards"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#fos_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#suitability_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#inh_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customer_engagement_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobi_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Purchase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#odoo_ERP"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#onprem_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#culture_gap"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#data_lost_risk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#downtime_risk"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vulnerability_level"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#outs_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#certifications_included"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prop_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#legal_requirements_included"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#prop_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#standard_reference_model"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#pub_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#pub_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Renting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#saas_erp_indiv_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Purchase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_R3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Renting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#sap_byD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#manages"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#manages"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#manages"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#manages"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Organization"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost"/>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#certifications_included"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#culture_gap"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customer_engagement_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#data_lost_risk"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#downtime_risk"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_framework"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#legal_requirements_included"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#market-entry_barriers"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#standard_reference_model"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#suitability_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#use_open_standards"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vulnerability_level"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#certifications_included"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#culture_gap"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customer_engagement_degree"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#data_lost_risk"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#downtime_risk"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_framework"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_cost"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#legal_requirements_included"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#market-entry_barriers"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#standard_reference_model"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#suitability_degree"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#use_open_standards"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vulnerability_level"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP"/>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#certifications_included"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#culture_gap"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customer_engagement_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#data_lost_risk"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#downtime_risk"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_framework"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access"/>
+        <DataOneOf>
+            <Literal>Purchase</Literal>
+            <Literal>Renting</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#legal_requirements_included"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#market-entry_barriers"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#standard_reference_model"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#suitability_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#use_open_standards"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#vulnerability_level"/>
+        <DataOneOf>
+            <Literal>High</Literal>
+            <Literal>Low</Literal>
+            <Literal>Medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>Low</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>Low</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Closed_Source_ERP</IRI>
+        <Literal>an ERP with a closed source code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Cloud_ERP</IRI>
+        <Literal>an ERP deployed on a cloud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_Fos_ERP</IRI>
+        <Literal>it is a Fos and commercialized ERP system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP</IRI>
+        <Literal>The set of ERP commercialized</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Commercial_of_the_Shelf_ERP</IRI>
+        <Literal>it is a generic and commercialized ERP system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Community</IRI>
+        <Literal>A organization that works under Free principles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Community_Fos_ERP</IRI>
+        <Literal>community are not commercial Fos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#ERP</IRI>
+        <Literal>Every ERP types are ERP systems with types properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP</IRI>
+        <Literal>some Proprietary ERP are Fos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Free_Open_Source_ERP</IRI>
+        <Literal>an ERP delivered un a free initiative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP</IRI>
+        <Literal>or Private ERP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#In-house_ERP</IRI>
+        <Literal>an ERP developed for a particular organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Mobile_ERP</IRI>
+        <Literal>An ERP systems accessible on mobile devices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#On-premise_ERP</IRI>
+        <Literal>an ERP deployed in the client organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Outsourced_ERP</IRI>
+        <Literal>an ERP externally deployed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Proprietary_ERP</IRI>
+        <Literal>an ERP owned by an organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP</IRI>
+        <Literal>is a only Saas
+some public is a some prop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP</IRI>
+        <Literal>or OTS ERP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP</IRI>
+        <Literal>some proprietary are public</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Public_ERP</IRI>
+        <Literal>an ERP devleoped for public use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#Software_as_Service_ERP</IRI>
+        <Literal>an ERP delivered as services</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree</IRI>
+        <Literal>A low degree means that, the system is accessible under several constraints. It for example be the place. A High degree means that the system&apos;s accessibility has very few constraints and can be accessed anywhere at anytime.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#accessibility_degree</IRI>
+        <Literal>The faculty to use the software no matter where you are.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost</IRI>
+        <Literal>similar to the licence cost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#adoption_cost</IRI>
+        <Literal>the amount (in term of level) of money needed to acquire or use the software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#certifications_included</IRI>
+        <Literal>States if the system offers some certifications or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#communication_systems_cost</IRI>
+        <Literal>The level of money required for communication systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#consulting_cost</IRI>
+        <Literal>the investment required for consulting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration</IRI>
+        <Literal>in terms of days</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#contract_duration</IRI>
+        <Literal>the duration of the contract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#culture_gap</IRI>
+        <Literal>The possible gap between the culture embeded in the system and the organization&apos;s culture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#customer_engagement_degree</IRI>
+        <Literal>the level inclusion of customers in the management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_cost</IRI>
+        <Literal>the level of cost needed to customize the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_degree</IRI>
+        <Literal>the degree of customization admited by the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#customization_time</IRI>
+        <Literal>the degree of time needed to customize the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#data_lost_risk</IRI>
+        <Literal>the level of risks to loose data while using the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#development_cost</IRI>
+        <Literal>The degree of cost needed to develop the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#development_time</IRI>
+        <Literal>The level of time needed to develop the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#downtime_risk</IRI>
+        <Literal>The level of risk of operation downtime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#employee_distraction_degree</IRI>
+        <Literal>the level of risks that employees be distracted while doing their work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#entry_cost</IRI>
+        <Literal>the level of investments needed to start the project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#flexibility_degree</IRI>
+        <Literal>The ability to add or remove easily a component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#free_copyright</IRI>
+        <Literal>True if the copyright is Free, False otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#hardware_cost</IRI>
+        <Literal>The level of investment needed for hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_cost</IRI>
+        <Literal>the level of investments needed to implement the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_framework</IRI>
+        <Literal>True if the system has its own implementation framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#implementation_time</IRI>
+        <Literal>level of time needed to complete the implementation phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_cost</IRI>
+        <Literal>the level of cost needed for integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time</IRI>
+        <Literal>A High value means it can be long and a Low one means it can be quick.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#integration_time</IRI>
+        <Literal>the amount of time needed for integration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#internet_access_needed</IRI>
+        <Literal>True if the system require an internet access and False otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#isDeployedOn</IRI>
+        <Literal>states where the system can be deployed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#isManagedBy</IRI>
+        <Literal>states who manages the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#it_infrastructure_access</IRI>
+        <Literal>How IT infrastructure is accessed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_cost</IRI>
+        <Literal>the level of cost needed for human staff required by the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#it_staff_needed</IRI>
+        <Literal>States if the system require particular human resource or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#knowledge_transfer_cost</IRI>
+        <Literal>the level of investment needed to transfer knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#legal_requirements_included</IRI>
+        <Literal>States if legal requirements are included related to the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#level_of_control</IRI>
+        <Literal>the level of control of the organization over the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_installed</IRI>
+        <Literal>States is the system is install at the client (locally) or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#locally_maintained</IRI>
+        <Literal>States is the system is maintained by the client (locally) or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#maintenance_cost</IRI>
+        <Literal>the level of cost needed to maintain the software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#manages</IRI>
+        <Literal>inverse of &quot;isManagedBy&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree</IRI>
+        <Literal>A Low value means that the system is hard to use while moving. A High value means that, the user can be in movement and still use the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#mobility_degree</IRI>
+        <Literal>The level of mobility authorized by the ERP system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#open_access_software</IRI>
+        <Literal>how the software can be accessed freely (True) or not (False)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#owned_by</IRI>
+        <Literal>The owner of the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#predictable_adoption_cost</IRI>
+        <Literal>True if it is possible to predict the adoption cost, False otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#project_cost</IRI>
+        <Literal>The degree of investment needed for the whole project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#project_time</IRI>
+        <Literal>level of time needed to complete the project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#scalability_degree</IRI>
+        <Literal>A high value means that the system can adapt itself to the scale of the organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#source_code_available</IRI>
+        <Literal>True if the source code is available and false otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#standard_reference_model</IRI>
+        <Literal>True if the reference model is based on world standards and False otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#suitability_degree</IRI>
+        <Literal>the chances to have a suitable software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#support_cost</IRI>
+        <Literal>the level of cost needed for support</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#support_degree</IRI>
+        <Literal>the level of external support needed to implement the software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#telecommunication_cost</IRI>
+        <Literal>the level of expenses needed for telecommunication while using the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#training_cost</IRI>
+        <Literal>degree of cost needed for training</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#training_time</IRI>
+        <Literal>The degree of time required for training</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#update_cost</IRI>
+        <Literal>cost for updates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#use_open_standards</IRI>
+        <Literal>True if the system includes open standards false otherwise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/user/ontologies/2019/8/ET#vulnerability_level</IRI>
+        <Literal>The level of possible vulnerabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>hasProperty(?$x,?$y), isPartOf(?$y,?$z) -&gt; hasProperty(?$x,?$z)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
