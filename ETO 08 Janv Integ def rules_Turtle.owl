@@ -1,0 +1,2017 @@
+@prefix eto: <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#> .
+@prefix eto1: <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd/1.0#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix etoferd: <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#> .
+@prefix eto13102021: <http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#> .
+@prefix untitled-ontology-122: <http://www.semanticweb.org/user/ontologies/2022/0/6/untitled-ontology-122#> .
+@base <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd> .
+
+<http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd> rdf:type owl:Ontology ;
+                                                                owl:versionIRI <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd/1.0> ;
+                                                                owl:imports <http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim> ,
+                                                                            <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type> ,
+                                                                            <http://www.semanticweb.org/user/ontologies/2021/12/23/orga> ,
+                                                                            <http://www.semanticweb.org/user/ontologies/2021/9/13/eto_contextFactors/1.1> ,
+                                                                            <http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties/1.1> ,
+                                                                            <http://www.semanticweb.org/user/ontologies/2022/1/07/etoRel/1.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#adopts
+eto13102021:adopts rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty eto13102021:hasA ;
+                                 owl:someValuesFrom eto13102021:ContextualFactors
+                               ] ;
+                   rdfs:range <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith
+eto13102021:comesWith rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                      rdfs:range eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor
+eto13102021:demandsFor rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                       rdfs:range eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isDistributedUnder
+eto13102021:isDistributedUnder rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ;
+                               rdfs:range etoferd:Licence_Type .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isInstalledIn
+eto13102021:isInstalledIn rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ;
+                          rdfs:range <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isManagedBy
+eto13102021:isManagedBy rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ;
+                        rdfs:range <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isOwnedBy
+eto13102021:isOwnedBy rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ;
+                      rdfs:range <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#owns
+eto13102021:owns rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty eto13102021:hasA ;
+                               owl:someValuesFrom eto13102021:ContextualFactors
+                             ] ;
+                 rdfs:range <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                            <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty eto13102021:hasA ;
+                              owl:someValuesFrom eto13102021:ERP_Property
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty etoferd:hasAReadinessDimension ;
+                              owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                            ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension
+etoferd:hasAReadinessDimension rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf eto13102021:hasA ;
+                               rdfs:domain <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                           <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty eto13102021:hasA ;
+                                             owl:someValuesFrom eto13102021:ERP_Property
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty etoferd:hasAReadinessDimension ;
+                                             owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                           ] ;
+                               rdfs:range <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                          eto13102021:Erp_Readiness_dimension .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff's_skill
+<http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff's_skill> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                                                                      eto13102021:Erp_Readiness_dimension ,
+                                                                                                      eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Cloud_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Cloud_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                           <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:comesWith ;
+                                                                                             owl:someValuesFrom eto13102021:High_UserMobility
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:comesWith ;
+                                                                                             owl:someValuesFrom eto13102021:Medium_ImplementationCost
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:demandsFor ;
+                                                                                             owl:someValuesFrom eto13102021:Medium_Level_In-house_IT_Skills
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:demandsFor ;
+                                                                                             owl:someValuesFrom eto13102021:Stable_internet_access
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:hasA ;
+                                                                                             owl:someValuesFrom eto13102021:ERP_Property
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:hasA ;
+                                                                                             owl:someValuesFrom eto13102021:High_scalability_degree
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty eto13102021:isInstalledIn ;
+                                                                                             owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                             owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                             owl:someValuesFrom etoferd:Low_level_IT_infrastructure
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                             owl:someValuesFrom etoferd:Medium_level_Project_team_skill
+                                                                                           ] ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                             owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff's_skill>
+                                                                                           ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Deployment_Erp_Type
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Deployment_Erp_Type> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty eto13102021:hasA ;
+                                                                                                       owl:someValuesFrom eto13102021:ERP_Property
+                                                                                                     ] ,
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                       owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                                     ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty eto13102021:hasA ;
+                                                                                       owl:someValuesFrom eto13102021:ERP_Property
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                       owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                     ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#In-house_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#In-house_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                              <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:comesWith ;
+                                                                                                owl:someValuesFrom eto13102021:High_ImplementationCost
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:comesWith ;
+                                                                                                owl:someValuesFrom eto13102021:High_ImplementationTime
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:comesWith ;
+                                                                                                owl:someValuesFrom eto13102021:High_SuitabilityDegree
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:comesWith ;
+                                                                                                owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#High_DevelopmentCost>
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:demandsFor ;
+                                                                                                owl:someValuesFrom eto13102021:High_Level_In-house_IT_Skills
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:hasA ;
+                                                                                                owl:someValuesFrom eto13102021:ERP_Property
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty eto13102021:isOwnedBy ;
+                                                                                                owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client>
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                owl:someValuesFrom etoferd:High_level_Project_team_skill
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                owl:someValuesFrom etoferd:Low_Level_People_training
+                                                                                              ] ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff's_skill>
+                                                                                              ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Off-the-shelf_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Off-the-shelf_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                                   <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty eto13102021:comesWith ;
+                                                                                                     owl:someValuesFrom eto13102021:Medium_AdoptionCost
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty eto13102021:hasA ;
+                                                                                                     owl:someValuesFrom eto13102021:ERP_Property
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty eto13102021:hasA ;
+                                                                                                     owl:someValuesFrom eto13102021:Standard_ReferenceModel
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty eto13102021:isOwnedBy ;
+                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                     owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                     owl:someValuesFrom etoferd:High_Level_People_training
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                     owl:someValuesFrom etoferd:High_level_Project_team_skill
+                                                                                                   ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#On-premise_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#On-premise_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                                <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:comesWith ;
+                                                                                                  owl:someValuesFrom eto13102021:High_AdoptionCost
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:comesWith ;
+                                                                                                  owl:someValuesFrom eto13102021:High_ImplementationTime
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:comesWith ;
+                                                                                                  owl:someValuesFrom eto13102021:High_InfrastructureCost
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:demandsFor ;
+                                                                                                  owl:someValuesFrom eto13102021:High_Level_In-house_IT_Skills
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:hasA ;
+                                                                                                  owl:someValuesFrom eto13102021:ERP_Property
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:hasA ;
+                                                                                                  owl:someValuesFrom eto13102021:High_Customizability_Level
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:hasA ;
+                                                                                                  owl:someValuesFrom eto13102021:Low_scalability_degree
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:isInstalledIn ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty eto13102021:isManagedBy ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                  owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                  owl:someValuesFrom etoferd:High_level_IT_infrastructure
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                  owl:someValuesFrom etoferd:High_level_Project_team_skill
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff's_skill>
+                                                                                                ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Open-source_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Open-source_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                                 <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Ownership_Erp_Type> ,
+                                                                                                 <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:comesWith ;
+                                                                                                   owl:someValuesFrom eto13102021:Low_ProviderDependenceDegree
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:comesWith ;
+                                                                                                   owl:someValuesFrom eto13102021:Medium_AdoptionCost
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:ERP_Property
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:High_Customizability_Level
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:Open_SourceCode
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:Standard_ReferenceModel
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:isDistributedUnder ;
+                                                                                                   owl:someValuesFrom etoferd:Free_Licence_Type
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:isOwnedBy ;
+                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                   owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                   owl:someValuesFrom etoferd:High_Level_People_training
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                   owl:someValuesFrom etoferd:High_level_Project_team_skill
+                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Ownership_Erp_Type
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Ownership_Erp_Type> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty eto13102021:hasA ;
+                                                                                                      owl:someValuesFrom eto13102021:ERP_Property
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                      owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                                    ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Proprietary_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Proprietary_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                                 <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Ownership_Erp_Type> ,
+                                                                                                 <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:comesWith ;
+                                                                                                   owl:someValuesFrom eto13102021:High_ProviderDependenceDegree
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:comesWith ;
+                                                                                                   owl:someValuesFrom eto13102021:Medium_AdoptionCost
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:Closed_SourceCode
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:ERP_Property
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:hasA ;
+                                                                                                   owl:someValuesFrom eto13102021:Standard_ReferenceModel
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:isDistributedUnder ;
+                                                                                                   owl:someValuesFrom etoferd:Copyrighted_Licence_Type
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty eto13102021:isOwnedBy ;
+                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                   owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                   owl:someValuesFrom etoferd:High_Level_People_training
+                                                                                                 ] ,
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                                   owl:someValuesFrom etoferd:High_level_Project_team_skill
+                                                                                                 ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Saas_Erp
+<http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Saas_Erp> rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Deployment_Erp_Type> ,
+                                                                                          <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                                                                                          <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:comesWith ;
+                                                                                            owl:someValuesFrom eto13102021:High_UserMobility
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:comesWith ;
+                                                                                            owl:someValuesFrom eto13102021:Low_AdoptionCost
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:comesWith ;
+                                                                                            owl:someValuesFrom eto13102021:Low_ImplementationTime
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:comesWith ;
+                                                                                            owl:someValuesFrom eto13102021:Low_InfrastructureCost
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:comesWith ;
+                                                                                            owl:someValuesFrom eto13102021:Medium_ImplementationCost
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:demandsFor ;
+                                                                                            owl:someValuesFrom eto13102021:Low_Level_In-house_IT_Skills
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:demandsFor ;
+                                                                                            owl:someValuesFrom eto13102021:Medium_Level_In-house_IT_Skills
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:demandsFor ;
+                                                                                            owl:someValuesFrom eto13102021:Stable_internet_access
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:hasA ;
+                                                                                            owl:someValuesFrom eto13102021:ERP_Property
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:hasA ;
+                                                                                            owl:someValuesFrom eto13102021:High_scalability_degree
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:hasA ;
+                                                                                            owl:someValuesFrom eto13102021:Low_Customizability_Level
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:isInstalledIn ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:isManagedBy ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:isOwnedBy ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider>
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                            owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                            owl:someValuesFrom etoferd:High_Level_People_training
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                            owl:someValuesFrom etoferd:Low_level_IT_infrastructure
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                            owl:someValuesFrom etoferd:Medium_level_Project_team_skill
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty etoferd:hasAReadinessDimension ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff's_skill>
+                                                                                          ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client
+<http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty eto13102021:adopts ;
+                                                                                          owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp>
+                                                                                        ] ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty eto13102021:hasA ;
+                                                                                          owl:someValuesFrom eto13102021:ContextualFactors
+                                                                                        ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider
+<http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:hasA ;
+                                                                                            owl:someValuesFrom eto13102021:ContextualFactors
+                                                                                          ] ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:owns ;
+                                                                                            owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp>
+                                                                                          ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization
+<http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty eto13102021:hasA ;
+                                                                                            owl:someValuesFrom eto13102021:ContextualFactors
+                                                                                          ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Adoption_Cost
+eto13102021:Adoption_Cost rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#BudgetLevel
+eto13102021:BudgetLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Business_Processes
+eto13102021:Business_Processes rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                               eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Centralization
+eto13102021:Centralization rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                           eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Change_management
+eto13102021:Change_management rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Clear_roles_and_responsibilities
+eto13102021:Clear_roles_and_responsibilities rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                             eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Closed_SourceCode
+eto13102021:Closed_SourceCode rdfs:subClassOf eto13102021:ERP_Property ,
+                                              eto13102021:Internal_Property ,
+                                              [ rdf:type owl:Class ;
+                                                owl:unionOf ( eto13102021:Closed_SourceCode
+                                                              eto13102021:Open_SourceCode
+                                                            )
+                                              ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Communication
+eto13102021:Communication rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                          eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Consultant
+eto13102021:Consultant rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                       eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ContextualFactors
+eto13102021:ContextualFactors rdf:type owl:Class ;
+                              rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Cross-functional_support
+eto13102021:Cross-functional_support rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#CustomMade_ReferenceModel
+eto13102021:CustomMade_ReferenceModel rdfs:subClassOf eto13102021:ERP_Property ,
+                                                      eto13102021:Internal_Property ,
+                                                      [ rdf:type owl:Class ;
+                                                        owl:unionOf ( eto13102021:CustomMade_ReferenceModel
+                                                                      eto13102021:Standard_ReferenceModel
+                                                                    )
+                                                      ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Customizability_Level
+eto13102021:Customizability_Level rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Data_Management
+eto13102021:Data_Management rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                            eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Development_Cost
+eto13102021:Development_Cost rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Employees_perception_of_usefulness
+eto13102021:Employees_perception_of_usefulness rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                               eto13102021:Erp_Readiness_dimension ,
+                                                               eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ErpExperienceLevel
+eto13102021:ErpExperienceLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ErpSkillsLevel
+eto13102021:ErpSkillsLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Erp_Readiness_dimension
+eto13102021:Erp_Readiness_dimension rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Formalization
+eto13102021:Formalization rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                          eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Goals_or_objectives
+eto13102021:Goals_or_objectives rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_AdoptionCost
+eto13102021:High_AdoptionCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                              eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_BudgetLevel
+eto13102021:High_BudgetLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                             eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_Customizability_Level
+eto13102021:High_Customizability_Level rdfs:subClassOf eto13102021:ERP_Property ,
+                                                       eto13102021:Internal_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ErpExperienceLevel
+eto13102021:High_ErpExperienceLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                    eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ErpSkillsLevel
+eto13102021:High_ErpSkillsLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ImplementationCost
+eto13102021:High_ImplementationCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                    eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ImplementationTime
+eto13102021:High_ImplementationTime rdfs:subClassOf eto13102021:ERP_Property ,
+                                                    eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_InfrastructureCost
+eto13102021:High_InfrastructureCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                    eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_InfrastructureLevel
+eto13102021:High_InfrastructureLevel owl:equivalentClass etoferd:High_level_IT_infrastructure ;
+                                     rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                     eto13102021:ContextualFactors ,
+                                                     eto13102021:Erp_Readiness_dimension ,
+                                                     eto13102021:IT_infrastructure ,
+                                                     eto13102021:Technical_requirement ,
+                                                     etoferd:High_level_IT_infrastructure .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_Level_In-house_IT_Skills
+eto13102021:High_Level_In-house_IT_Skills rdfs:subClassOf eto13102021:Constraint_Property ,
+                                                          eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ProviderDependenceDegree
+eto13102021:High_ProviderDependenceDegree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                          eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_SuitabilityDegree
+eto13102021:High_SuitabilityDegree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                   eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_UserMobility
+eto13102021:High_UserMobility rdfs:subClassOf eto13102021:ERP_Property ,
+                                              eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_scalability_degree
+eto13102021:High_scalability_degree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                    eto13102021:Internal_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Highly_Subjective
+eto13102021:Highly_Subjective rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                              eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#HumanCultureOrientation
+eto13102021:HumanCultureOrientation rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#IT_infrastructure
+eto13102021:IT_infrastructure rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                              eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Implementation_Cost
+eto13102021:Implementation_Cost rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Implementation_Time
+eto13102021:Implementation_Time rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#In-house_IT_Skills
+eto13102021:In-house_IT_Skills rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Individual_readiness
+eto13102021:Individual_readiness rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                 eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#InfrastructureLevel
+eto13102021:InfrastructureLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Infrastructure_Cost
+eto13102021:Infrastructure_Cost rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Internet_Access
+eto13102021:Internet_Access rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_AdoptionCost
+eto13102021:Low_AdoptionCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                             eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_BudgetLevel
+eto13102021:Low_BudgetLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                            eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_Customizability_Level
+eto13102021:Low_Customizability_Level rdfs:subClassOf eto13102021:ERP_Property ,
+                                                      eto13102021:Internal_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ErpExperienceLevel
+eto13102021:Low_ErpExperienceLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                   eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ErpSkillsLevel
+eto13102021:Low_ErpSkillsLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                               eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ImplementationCost
+eto13102021:Low_ImplementationCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                   eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ImplementationTime
+eto13102021:Low_ImplementationTime rdfs:subClassOf eto13102021:ERP_Property ,
+                                                   eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_InfrastructureCost
+eto13102021:Low_InfrastructureCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                   eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_InfrastructureLevel
+eto13102021:Low_InfrastructureLevel owl:equivalentClass etoferd:Low_level_IT_infrastructure ;
+                                    rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                    eto13102021:ContextualFactors ,
+                                                    eto13102021:Erp_Readiness_dimension ,
+                                                    eto13102021:IT_infrastructure ,
+                                                    eto13102021:Technical_requirement ,
+                                                    etoferd:Low_level_IT_infrastructure .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_Level_In-house_IT_Skills
+eto13102021:Low_Level_In-house_IT_Skills rdfs:subClassOf eto13102021:Constraint_Property ,
+                                                         eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ProviderDependenceDegree
+eto13102021:Low_ProviderDependenceDegree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                         eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_SuitabilityDegree
+eto13102021:Low_SuitabilityDegree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                  eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_UserMobility
+eto13102021:Low_UserMobility rdfs:subClassOf eto13102021:ERP_Property ,
+                                             eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_scalability_degree
+eto13102021:Low_scalability_degree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                   eto13102021:Internal_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Management_skill
+eto13102021:Management_skill rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                             eto13102021:Erp_Readiness_dimension ,
+                                             eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Management_style
+eto13102021:Management_style rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_AdoptionCost
+eto13102021:Medium_AdoptionCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_BudgetLevel
+eto13102021:Medium_BudgetLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                               eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_Customizability_Level
+eto13102021:Medium_Customizability_Level rdfs:subClassOf eto13102021:ERP_Property ,
+                                                         eto13102021:Internal_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_ErpExperienceLevel
+eto13102021:Medium_ErpExperienceLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                      eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_ErpSkillsLevel
+eto13102021:Medium_ErpSkillsLevel rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                  eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_ImplementationCost
+eto13102021:Medium_ImplementationCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                      eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_ImplementationTime
+eto13102021:Medium_ImplementationTime rdfs:subClassOf eto13102021:ERP_Property ,
+                                                      eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_InfrastructureCost
+eto13102021:Medium_InfrastructureCost rdfs:subClassOf eto13102021:ERP_Property ,
+                                                      eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_InfrastructureLevel
+eto13102021:Medium_InfrastructureLevel owl:equivalentClass etoferd:Medium_level_IT_infrastructure ;
+                                       rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                       eto13102021:ContextualFactors ,
+                                                       eto13102021:Erp_Readiness_dimension ,
+                                                       eto13102021:IT_infrastructure ,
+                                                       eto13102021:Technical_requirement ,
+                                                       etoferd:Medium_level_IT_infrastructure .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_Level_In-house_IT_Skills
+eto13102021:Medium_Level_In-house_IT_Skills rdfs:subClassOf eto13102021:Constraint_Property ,
+                                                            eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_ProviderDependenceDegree
+eto13102021:Medium_ProviderDependenceDegree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                            eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_SuitabilityDegree
+eto13102021:Medium_SuitabilityDegree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                     eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_UserMobility
+eto13102021:Medium_UserMobility rdfs:subClassOf eto13102021:ERP_Property ,
+                                                eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_scalability_degree
+eto13102021:Medium_scalability_degree rdfs:subClassOf eto13102021:ERP_Property ,
+                                                      eto13102021:Internal_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Objective
+eto13102021:Objective rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                      eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Open_SourceCode
+eto13102021:Open_SourceCode rdfs:subClassOf eto13102021:ERP_Property ,
+                                            eto13102021:Internal_Property ,
+                                            [ rdf:type owl:Class ;
+                                              owl:unionOf ( eto13102021:Closed_SourceCode
+                                                            eto13102021:Open_SourceCode
+                                                          )
+                                            ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Organizational_commitment
+eto13102021:Organizational_commitment rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                      eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Organizational_culture
+eto13102021:Organizational_culture rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#People_training
+eto13102021:People_training rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                            eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Personnal_valence
+eto13102021:Personnal_valence rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                              eto13102021:Erp_Readiness_dimension ,
+                                              eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_Team_Skill
+eto13102021:Project_Team_Skill rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                               eto13102021:Erp_Readiness_dimension ,
+                                               eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_champion
+eto13102021:Project_champion rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                             eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_management
+eto13102021:Project_management rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_manager
+eto13102021:Project_manager rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                            eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_planning
+eto13102021:Project_planning rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                             eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Provider_Dependence_Degree
+eto13102021:Provider_Dependence_Degree rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Reference_Model
+eto13102021:Reference_Model rdfs:subClassOf eto13102021:ERP_Property ,
+                                            [ rdf:type owl:Class ;
+                                              owl:unionOf ( eto13102021:CustomMade_ReferenceModel
+                                                            eto13102021:Standard_ReferenceModel
+                                                          )
+                                            ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Scalability_degree
+eto13102021:Scalability_degree rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Shared_belief
+eto13102021:Shared_belief rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                          eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Source_Code
+eto13102021:Source_Code rdfs:subClassOf eto13102021:ERP_Property ,
+                                        [ rdf:type owl:Class ;
+                                          owl:unionOf ( eto13102021:Closed_SourceCode
+                                                        eto13102021:Open_SourceCode
+                                                      )
+                                        ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Specialization
+eto13102021:Specialization rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                           eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Stable_internet_access
+eto13102021:Stable_internet_access rdfs:subClassOf eto13102021:Constraint_Property ,
+                                                   eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Staff
+eto13102021:Staff rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Standard_ReferenceModel
+eto13102021:Standard_ReferenceModel rdfs:subClassOf eto13102021:ERP_Property ,
+                                                    eto13102021:Internal_Property ,
+                                                    [ rdf:type owl:Class ;
+                                                      owl:unionOf ( eto13102021:CustomMade_ReferenceModel
+                                                                    eto13102021:Standard_ReferenceModel
+                                                                  )
+                                                    ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Strategic_IT_plan
+eto13102021:Strategic_IT_plan rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                              eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Strategy
+eto13102021:Strategy rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Structure
+eto13102021:Structure rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Subjective
+eto13102021:Subjective rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                       eto13102021:ContextualFactors .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Suitability_Degree
+eto13102021:Suitability_Degree rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Technical_requirement
+eto13102021:Technical_requirement rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Top_management_commitment_and_support
+eto13102021:Top_management_commitment_and_support rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                                  eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Unstable_internet_access
+eto13102021:Unstable_internet_access rdfs:subClassOf eto13102021:Constraint_Property ,
+                                                     eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#User_Mobility
+eto13102021:User_Mobility rdfs:subClassOf eto13102021:ERP_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#User_Skill
+eto13102021:User_Skill rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                       eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Vision_and_Mission
+eto13102021:Vision_and_Mission rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                               eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#change_Appropriateness
+eto13102021:change_Appropriateness rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                   eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#employees_attitude
+eto13102021:employees_attitude rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                               eto13102021:Erp_Readiness_dimension ,
+                                               eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#employees_intention_to_use
+eto13102021:employees_intention_to_use rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                       eto13102021:Erp_Readiness_dimension ,
+                                                       eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#resistance_to_change
+eto13102021:resistance_to_change rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                 eto13102021:Erp_Readiness_dimension .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Copyrighted_Licence_Type
+etoferd:Copyrighted_Licence_Type rdf:type owl:Class ;
+                                 rdfs:subClassOf etoferd:Licence_Type ;
+                                 owl:disjointWith etoferd:Free_Licence_Type .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Free_Licence_Type
+etoferd:Free_Licence_Type rdf:type owl:Class ;
+                          rdfs:subClassOf etoferd:Licence_Type .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_Level_People_training
+etoferd:High_Level_People_training rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                   eto13102021:Erp_Readiness_dimension ,
+                                                   eto13102021:People_training ,
+                                                   eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_infrastructure
+etoferd:High_level_IT_infrastructure rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                     eto13102021:ContextualFactors ,
+                                                     eto13102021:Erp_Readiness_dimension ,
+                                                     eto13102021:High_InfrastructureLevel ,
+                                                     eto13102021:IT_infrastructure ,
+                                                     eto13102021:InfrastructureLevel ,
+                                                     eto13102021:Technical_requirement .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_Project_team_skill
+etoferd:High_level_Project_team_skill rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                      eto13102021:Erp_Readiness_dimension ,
+                                                      eto13102021:Project_Team_Skill ,
+                                                      eto13102021:Staff ,
+                                                      eto13102021:User_Skill .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type
+etoferd:Licence_Type rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_Level_People_training
+etoferd:Low_Level_People_training rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                  eto13102021:Erp_Readiness_dimension ,
+                                                  eto13102021:People_training ,
+                                                  eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_infrastructure
+etoferd:Low_level_IT_infrastructure rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                    eto13102021:ContextualFactors ,
+                                                    eto13102021:Erp_Readiness_dimension ,
+                                                    eto13102021:IT_infrastructure ,
+                                                    eto13102021:InfrastructureLevel ,
+                                                    eto13102021:Low_InfrastructureLevel ,
+                                                    eto13102021:Technical_requirement .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_Project_team_skill
+etoferd:Low_level_Project_team_skill rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                     eto13102021:Erp_Readiness_dimension ,
+                                                     eto13102021:Project_Team_Skill ,
+                                                     eto13102021:Staff ,
+                                                     eto13102021:User_Skill .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_Level_People_training
+etoferd:Medium_Level_People_training rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                     eto13102021:Erp_Readiness_dimension ,
+                                                     eto13102021:People_training ,
+                                                     eto13102021:Staff .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_infrastructure
+etoferd:Medium_level_IT_infrastructure rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                       eto13102021:ContextualFactors ,
+                                                       eto13102021:Erp_Readiness_dimension ,
+                                                       eto13102021:IT_infrastructure ,
+                                                       eto13102021:InfrastructureLevel ,
+                                                       eto13102021:Medium_InfrastructureLevel ,
+                                                       eto13102021:Technical_requirement .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_Project_team_skill
+etoferd:Medium_level_Project_team_skill rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                        eto13102021:Erp_Readiness_dimension ,
+                                                        eto13102021:Project_Team_Skill ,
+                                                        eto13102021:Staff ,
+                                                        eto13102021:User_Skill .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff's_skill
+<http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff's_skill> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff's_skill> ,
+                                                                                                           <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                                                                           eto13102021:Erp_Readiness_dimension ,
+                                                                                                           eto13102021:Staff ,
+                                                                                                           eto13102021:User_Skill .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_staff's_skill
+<http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_staff's_skill> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff's_skill> ,
+                                                                                                          <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                                                                          eto13102021:Erp_Readiness_dimension ,
+                                                                                                          eto13102021:Staff ,
+                                                                                                          eto13102021:User_Skill .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff's_skill
+<http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff's_skill> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff's_skill> ,
+                                                                                                             <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                                                                                                             eto13102021:Erp_Readiness_dimension ,
+                                                                                                             eto13102021:Staff ,
+                                                                                                             eto13102021:User_Skill .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#High_DevelopmentCost
+<http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#High_DevelopmentCost> rdfs:subClassOf eto13102021:ERP_Property ,
+                                                                                                          eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#Low_DevelopmentCost
+<http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#Low_DevelopmentCost> rdfs:subClassOf eto13102021:ERP_Property ,
+                                                                                                         eto13102021:Risk_Property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#Medium_DevelopmentCost
+<http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#Medium_DevelopmentCost> rdfs:subClassOf eto13102021:ERP_Property ,
+                                                                                                            eto13102021:Risk_Property .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#erp_inst2
+etoferd:erp_inst2 rdf:type owl:NamedIndividual ,
+                           <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ,
+                           <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty eto13102021:hasA ;
+                             owl:someValuesFrom eto13102021:ERP_Property
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty etoferd:hasAReadinessDimension ;
+                             owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                           ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hBud
+etoferd:hBud rdf:type owl:NamedIndividual ,
+                      <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                      eto13102021:BudgetLevel ,
+                      eto13102021:ContextualFactors ,
+                      eto13102021:High_BudgetLevel .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hHe
+etoferd:hHe rdf:type owl:NamedIndividual ,
+                     <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                     eto13102021:ContextualFactors ,
+                     eto13102021:ErpExperienceLevel ,
+                     eto13102021:High_ErpExperienceLevel .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hHs
+etoferd:hHs rdf:type owl:NamedIndividual ,
+                     <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                     eto13102021:ContextualFactors ,
+                     eto13102021:ErpSkillsLevel ,
+                     eto13102021:High_ErpSkillsLevel .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hIf
+etoferd:hIf rdf:type owl:NamedIndividual ,
+                     <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor> ,
+                     eto13102021:ContextualFactors ,
+                     eto13102021:Erp_Readiness_dimension ,
+                     eto13102021:High_InfrastructureLevel ,
+                     eto13102021:IT_infrastructure ,
+                     eto13102021:InfrastructureLevel ,
+                     eto13102021:Technical_requirement ,
+                     etoferd:High_level_IT_infrastructure .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#org_inst
+etoferd:org_inst rdf:type owl:NamedIndividual ,
+                          <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty eto13102021:adopts ;
+                            owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty eto13102021:hasA ;
+                            owl:someValuesFrom eto13102021:ContextualFactors
+                          ] ;
+                 eto13102021:adopts etoferd:erp_inst2 ;
+                 eto13102021:hasA etoferd:hBud ,
+                                  etoferd:hHe ,
+                                  etoferd:hHs ,
+                                  etoferd:hIf .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( eto13102021:Closed_SourceCode
+                eto13102021:Open_SourceCode
+              ) ;
+  rdfs:subClassOf eto13102021:ERP_Property
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( eto13102021:Closed_SourceCode
+                eto13102021:Open_SourceCode
+              ) ;
+  rdfs:subClassOf eto13102021:Internal_Property
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( eto13102021:Closed_SourceCode
+                eto13102021:Open_SourceCode
+              ) ;
+  rdfs:subClassOf eto13102021:Source_Code
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( eto13102021:CustomMade_ReferenceModel
+                eto13102021:Standard_ReferenceModel
+              ) ;
+  rdfs:subClassOf eto13102021:ERP_Property
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( eto13102021:CustomMade_ReferenceModel
+                eto13102021:Standard_ReferenceModel
+              ) ;
+  rdfs:subClassOf eto13102021:Internal_Property
+] .
+
+
+[ rdf:type owl:Class ;
+  owl:unionOf ( eto13102021:CustomMade_ReferenceModel
+                eto13102021:Standard_ReferenceModel
+              ) ;
+  rdfs:subClassOf eto13102021:Reference_Model
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:Closed_SourceCode ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:High_Customizability_Level ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:High_scalability_degree ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:Low_Customizability_Level ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:Low_scalability_degree ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:Open_SourceCode ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty eto13102021:hasA ;
+  owl:someValuesFrom eto13102021:Standard_ReferenceModel ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty eto13102021:hasA ;
+                    owl:someValuesFrom eto13102021:ERP_Property
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom etoferd:High_Level_People_training ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom etoferd:High_level_IT_infrastructure ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom etoferd:High_level_Project_team_skill ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom etoferd:Low_Level_People_training ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom etoferd:Low_level_IT_infrastructure ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom etoferd:Medium_level_Project_team_skill ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff's_skill> ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty etoferd:hasAReadinessDimension ;
+  owl:someValuesFrom <http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff's_skill> ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty etoferd:hasAReadinessDimension ;
+                    owl:someValuesFrom eto13102021:Erp_Readiness_dimension
+                  ]
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+etoferd:e rdf:type swrl:Variable .
+
+etoferd:o rdf:type swrl:Variable .
+
+etoferd:mb rdf:type swrl:Variable .
+
+etoferd:mh rdf:type swrl:Variable .
+
+etoferd:me rdf:type swrl:Variable .
+
+etoferd:mi rdf:type swrl:Variable .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S5"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ;
+                                      swrl:argument1 etoferd:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate eto13102021:High_BudgetLevel ;
+                                                 swrl:argument1 etoferd:mb
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate eto13102021:High_ErpSkillsLevel ;
+                                                            swrl:argument1 etoferd:mh
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate eto13102021:High_ErpExperienceLevel ;
+                                                                       swrl:argument1 etoferd:me
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                  swrl:classPredicate eto13102021:High_InfrastructureLevel ;
+                                                                                  swrl:argument1 etoferd:mi
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate eto13102021:hasA ;
+                                                                                             swrl:argument1 etoferd:o ;
+                                                                                             swrl:argument2 etoferd:mb
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                        swrl:argument1 etoferd:o ;
+                                                                                                        swrl:argument2 etoferd:mh
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                   swrl:argument1 etoferd:o ;
+                                                                                                                   swrl:argument2 etoferd:me
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                              swrl:argument1 etoferd:o ;
+                                                                                                                              swrl:argument2 etoferd:mi
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate eto13102021:adopts ;
+                                                                                                                                         swrl:argument1 etoferd:o ;
+                                                                                                                                         swrl:argument2 etoferd:e
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest rdf:nil
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#In-house_Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S3"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ;
+                                      swrl:argument1 etoferd:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate eto13102021:Low_BudgetLevel ;
+                                                 swrl:argument1 etoferd:mb
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate eto13102021:Low_ErpSkillsLevel ;
+                                                            swrl:argument1 etoferd:mh
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate eto13102021:Low_ErpExperienceLevel ;
+                                                                       swrl:argument1 etoferd:me
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                  swrl:classPredicate eto13102021:Low_InfrastructureLevel ;
+                                                                                  swrl:argument1 etoferd:mi
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate eto13102021:hasA ;
+                                                                                             swrl:argument1 etoferd:o ;
+                                                                                             swrl:argument2 etoferd:mb
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                        swrl:argument1 etoferd:o ;
+                                                                                                        swrl:argument2 etoferd:mh
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                   swrl:argument1 etoferd:o ;
+                                                                                                                   swrl:argument2 etoferd:me
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                              swrl:argument1 etoferd:o ;
+                                                                                                                              swrl:argument2 etoferd:mi
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate eto13102021:adopts ;
+                                                                                                                                         swrl:argument1 etoferd:o ;
+                                                                                                                                         swrl:argument2 etoferd:e
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest rdf:nil
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Saas_Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S4"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ;
+                                      swrl:argument1 etoferd:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate eto13102021:Medium_BudgetLevel ;
+                                                 swrl:argument1 etoferd:mb
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate eto13102021:Low_ErpSkillsLevel ;
+                                                            swrl:argument1 etoferd:mh
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate eto13102021:Low_ErpExperienceLevel ;
+                                                                       swrl:argument1 etoferd:me
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                  swrl:propertyPredicate eto13102021:hasA ;
+                                                                                  swrl:argument1 etoferd:o ;
+                                                                                  swrl:argument2 etoferd:mb
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate eto13102021:hasA ;
+                                                                                             swrl:argument1 etoferd:o ;
+                                                                                             swrl:argument2 etoferd:mh
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                        swrl:argument1 etoferd:o ;
+                                                                                                        swrl:argument2 etoferd:me
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate eto13102021:adopts ;
+                                                                                                                   swrl:argument1 etoferd:o ;
+                                                                                                                   swrl:argument2 etoferd:e
+                                                                                                                 ] ;
+                                                                                                       rdf:rest rdf:nil
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Proprietary_Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S2"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ;
+                                      swrl:argument1 etoferd:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate eto13102021:Medium_BudgetLevel ;
+                                                 swrl:argument1 etoferd:mb
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate eto13102021:Medium_ErpSkillsLevel ;
+                                                            swrl:argument1 etoferd:mh
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate eto13102021:Medium_ErpExperienceLevel ;
+                                                                       swrl:argument1 etoferd:me
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                  swrl:classPredicate eto13102021:Low_InfrastructureLevel ;
+                                                                                  swrl:argument1 etoferd:mi
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate eto13102021:hasA ;
+                                                                                             swrl:argument1 etoferd:o ;
+                                                                                             swrl:argument2 etoferd:mb
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                        swrl:argument1 etoferd:o ;
+                                                                                                        swrl:argument2 etoferd:mh
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                   swrl:argument1 etoferd:o ;
+                                                                                                                   swrl:argument2 etoferd:me
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                              swrl:argument1 etoferd:o ;
+                                                                                                                              swrl:argument2 etoferd:mi
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate eto13102021:adopts ;
+                                                                                                                                         swrl:argument1 etoferd:o ;
+                                                                                                                                         swrl:argument2 etoferd:e
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest rdf:nil
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Cloud_Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S1"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ;
+                                      swrl:argument1 etoferd:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate eto13102021:Medium_BudgetLevel ;
+                                                 swrl:argument1 etoferd:mb
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate eto13102021:Medium_ErpSkillsLevel ;
+                                                            swrl:argument1 etoferd:mh
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate eto13102021:Medium_ErpExperienceLevel ;
+                                                                       swrl:argument1 etoferd:me
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                  swrl:classPredicate eto13102021:Medium_InfrastructureLevel ;
+                                                                                  swrl:argument1 etoferd:mi
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate eto13102021:hasA ;
+                                                                                             swrl:argument1 etoferd:o ;
+                                                                                             swrl:argument2 etoferd:mb
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                        swrl:argument1 etoferd:o ;
+                                                                                                        swrl:argument2 etoferd:mh
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                   swrl:argument1 etoferd:o ;
+                                                                                                                   swrl:argument2 etoferd:me
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate eto13102021:hasA ;
+                                                                                                                              swrl:argument1 etoferd:o ;
+                                                                                                                              swrl:argument2 etoferd:mi
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate eto13102021:adopts ;
+                                                                                                                                         swrl:argument1 etoferd:o ;
+                                                                                                                                         swrl:argument2 etoferd:e
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest rdf:nil
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#On-premise_Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S6"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization> ;
+                                      swrl:argument1 etoferd:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate eto13102021:Medium_ErpSkillsLevel ;
+                                                 swrl:argument1 etoferd:mh
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate eto13102021:Medium_ErpExperienceLevel ;
+                                                            swrl:argument1 etoferd:me
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate eto13102021:hasA ;
+                                                                       swrl:argument1 etoferd:o ;
+                                                                       swrl:argument2 etoferd:mh
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                  swrl:propertyPredicate eto13102021:hasA ;
+                                                                                  swrl:argument1 etoferd:o ;
+                                                                                  swrl:argument2 etoferd:me
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate eto13102021:adopts ;
+                                                                                             swrl:argument1 etoferd:o ;
+                                                                                             swrl:argument2 etoferd:e
+                                                                                           ] ;
+                                                                                 rdf:rest rdf:nil
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Open-source_Erp> ;
+                           swrl:argument1 etoferd:e
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi

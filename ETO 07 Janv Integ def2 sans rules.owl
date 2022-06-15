@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd"
+     xmlns:eto1="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd/1.0#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:etoferd="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#"
+     xmlns:eto13102021="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#"
+     xmlns:untitled-ontology-122="http://www.semanticweb.org/user/ontologies/2022/0/6/untitled-ontology-122#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd/1.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto_contextFactors/1.1"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties/1.1"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2022/1/07/etoRel/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#adopts -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#adopts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ERP_Property"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ERP_Property"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isDistributedUnder -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isDistributedUnder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isInstalledIn -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isInstalledIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isManagedBy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isManagedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isOwnedBy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isOwnedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#owns -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#owns">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Software_Product"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Erp_Readiness_dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Cloud_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Cloud_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_UserMobility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_ImplementationCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_Level_In-house_IT_Skills"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Stable_internet_access"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_scalability_degree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isInstalledIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_infrastructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_Project_team_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff&apos;s_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ERP_Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Erp_Readiness_dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#In-house_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#In-house_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ImplementationCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ImplementationTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_SuitabilityDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/1/07/erpProperties#High_DevelopmentCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_Level_In-house_IT_Skills"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isOwnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_Project_team_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_Level_People_training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff&apos;s_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Off-the-shelf_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Off-the-shelf_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_AdoptionCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Standard_ReferenceModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isOwnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_Level_People_training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_Project_team_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#On-premise_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#On-premise_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_AdoptionCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ImplementationTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_InfrastructureCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_Level_In-house_IT_Skills"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_Customizability_Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_scalability_degree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isInstalledIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isManagedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_infrastructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_Project_team_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff&apos;s_skill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Open-source_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Open-source_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ProviderDependenceDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_AdoptionCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_Customizability_Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Open_SourceCode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isDistributedUnder"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Free_Licence_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Proprietary_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Proprietary_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_ProviderDependenceDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Closed_SourceCode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isDistributedUnder"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Copyrighted_Licence_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Saas_Erp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Saas_Erp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_AdoptionCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_ImplementationTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#comesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_InfrastructureCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#demandsFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_Level_In-house_IT_Skills"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_Customizability_Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isManagedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#isOwnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#hasAReadinessDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_Level_People_training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Client">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#adopts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Erp_Provider">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#owns"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Erp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/12/23/orga#Organization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#hasA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ContextualFactor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ContextualFactor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#ContextualFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Erp_Readiness_dimension -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Erp_Readiness_dimension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/12/23/erp_type#Factor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_InfrastructureLevel -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#High_InfrastructureLevel">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_infrastructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_InfrastructureLevel -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Low_InfrastructureLevel">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_infrastructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_InfrastructureLevel -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Medium_InfrastructureLevel">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_infrastructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Copyrighted_Licence_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Copyrighted_Licence_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Free_Licence_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Free_Licence_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Free_Licence_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_Level_People_training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_Level_People_training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#People_training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#IT_infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_Project_team_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_Project_team_skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_Team_Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Licence_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_Level_People_training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_Level_People_training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#People_training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#IT_infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_Project_team_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_Project_team_skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_Team_Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_Level_People_training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_Level_People_training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#People_training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#IT_infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_Project_team_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_Project_team_skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/9/13/eto13102021#Project_Team_Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff&apos;s_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#High_level_IT_staff&apos;s_skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff&apos;s_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_staff&apos;s_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Low_level_IT_staff&apos;s_skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff&apos;s_skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff&apos;s_skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/01/6/etoferd#Medium_level_IT_staff&apos;s_skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/01/06/readinessDim#IT_staff&apos;s_skill"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
